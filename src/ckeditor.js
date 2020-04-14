@@ -29,7 +29,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
-//import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 
 export default class BalloonEditor extends BalloonEditorBase {}
 
@@ -57,8 +57,8 @@ BalloonEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
-	//Highlight
+	TextTransformation,
+	Highlight
 ];
 
 // Editor configuration.
@@ -67,22 +67,22 @@ BalloonEditor.defaultConfig = {
 		items: [
 			'heading',
 			'|',
-			// 'bold',
-			// 'italic',
-			// 'link',
-			// 'bulletedList',
-			// 'numberedList',
-			// '|',
-			// 'indent',
-			// 'outdent',
-			// '|',
-			// 'imageUpload',
-			// 'blockQuote',
-			// 'insertTable',
-			// 'mediaEmbed',
+			'bold',
+			'italic',
+			'link',
+			'bulletedList',
+			'numberedList',
+			'|',
+			'indent',
+			'outdent',
+			'|',
+			'imageUpload',
+			'blockQuote',
+			'insertTable',
+			'mediaEmbed',
 			'undo',
-			'redo'
-			//'highlight'
+			'redo',
+			'highlight'
 		]
 	},
 	image: {
