@@ -9,8 +9,8 @@ import BalloonEditorBase from '@ckeditor/ckeditor5-editor-balloon/src/balloonedi
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
-// import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
-// import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
+import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
+import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
@@ -29,7 +29,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
-import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+//import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 
 export default class BalloonEditor extends BalloonEditorBase {}
 
@@ -38,8 +38,8 @@ BalloonEditor.builtinPlugins = [
 	Essentials,
 	UploadAdapter,
 	Autoformat,
-	// Bold,
-	// Italic,
+	Bold,
+	Italic,
 	BlockQuote,
 	CKFinder,
 	EasyImage,
@@ -57,8 +57,8 @@ BalloonEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation,
-	Highlight
+	TextTransformation
+	//Highlight
 ];
 
 // Editor configuration.
@@ -81,8 +81,8 @@ BalloonEditor.defaultConfig = {
 			// 'insertTable',
 			// 'mediaEmbed',
 			'undo',
-			'redo',
-			'highlight'
+			'redo'
+			//'highlight'
 		]
 	},
 	image: {
