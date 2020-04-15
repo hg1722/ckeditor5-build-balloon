@@ -25,7 +25,8 @@ BalloonEditor.defaultConfig = {
 		items: [
 			'heading',
 			'|',
-			'highlight'
+			'test',
+			'highlight:yellowMarker', 'highlight:greenMarker', 'highlight:pinkMarker', 'highlight:blueMarker', 'removeHighlight'
 		]
 	},
 	// image: {
